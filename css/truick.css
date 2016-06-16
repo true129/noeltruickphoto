@@ -1,0 +1,118 @@
+.container {
+    bottom: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    height: 100vh;
+    left: 0;
+    min-width: 600px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+}
+
+aside {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+}
+
+#logo, #menu {
+    border: 1px solid black;
+    display: flex;
+    height: 100%;
+    margin: 0 4px;
+}
+
+#logo {
+    display: block;
+    justify-content: center;
+    margin-bottom: 0.25vh;
+    margin-top: 0.5vh;
+}
+
+#logo img {
+    border: 0;
+    margin: 0;
+    opacity: 0.2;
+    padding: 10%;
+    text-align: center;
+    width: 80%;
+}
+
+#menu {
+    margin-bottom: 0.5vh;
+    margin-top: 0.25vh;
+}
+
+#menu > ul {
+    font-size: 2vw;
+    font-variant: small-caps;
+    list-style-type: none;
+    -webkit-padding-start: 15%;
+}
+
+#menu > ul li.active {
+    color: red;
+    font-weight: 700;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu a:active,
+#menu a:hover,
+#menu a:link,
+#menu a:visited {
+    color: black;
+}
+
+.container > section {
+    border: 0;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+#main {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+
+#main img {
+    max-height: 85vh;
+    max-width: 80vw;
+}
+
+#main figcaption {
+    display: flex;
+    flex: 15vh;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+#main div {
+    padding-bottom: 20vh;
+    padding-top: 20vh;
+}
+
+.arrow {
+    width: 24px;
+}

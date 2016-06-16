@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel Truick Photography</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300italic,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/truick.css">
+</head>
+
+<body>
+    <section class="container">
+        <aside>
+            <div id="logo">
+                <img src="img/NTP2016_bk-logo.png" alt="" />
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">entertainment</a></li>
+                    <li><a href="nature.html">nature</a></li>
+                    <li class="active">production</li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </aside>
+        <section>
+            <div id="main">
+                <div>
+                    <iframe src="https://player.vimeo.com/video/170432272" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        var current = 0
+        var photos = [{
+            caption: 'This is What It\'s Suppose To Look Like (2015)',
+            src: 'perceepntp_2att.jpg'
+        }, {
+            caption: 'Wooden Nickel (2015)',
+            src: 'ntruickphoto_artrap-5.jpg'
+        }, {
+            caption: 'The Game (2015)',
+            src: 'ntruickphoto_artrap-6.jpg'
+        }]
+
+        function refresh() {
+            $('#main img').attr('src', 'img/' + photos[current].src)
+            $('#title').text(photos[current].caption)
+        }
+
+        $('#prev').on('click', function(e) {
+            e.preventDefault()
+            current--
+            if (current < 0) {
+                current = 2
+            }
+            refresh()
+        })
+
+        $('#next').on('click' ,function(e) {
+            e.preventDefault()
+            current++
+            if (current > 2) {
+                current = 0
+            }
+            refresh()
+        })
+
+        $(function() {
+            refresh()
+        })
+    </script>
+</body>
+
+</html>

@@ -17,8 +17,8 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li class="active">entertainment</li>
-                    <li><a href="nature.html">nature</a></li>
+                    <li><a href="index.html">entertainment</a></li>
+                    <li class="active">nature</li>
                     <li><a href="production.html">production</a></li>
                     <li><a href="#">contact</a></li>
                 </ul>
@@ -41,66 +41,48 @@
     <script>
         var current = 0
         var photos = [{
-            caption: 'BIZ & COOL V',
-            src: 'ntruickphoto_artrap-1.jpg'
+            caption: 'GEOKINETIC',
+            src: 'livingdesert8by10-1.jpg'
         }, {
-            caption: 'MELLE MEL & THE FURIOUS 5',
-            src: 'ntruickphoto_artrap-2.jpg'
+            caption: 'THE GIRAFFE OF PORTOLA AVENUE',
+            src: 'livingdesert8by10-2.jpg'
         }, {
-            caption: 'THE RAP PACK',
-            src: 'ntruickphoto_ddane5030-3.jpg'
+            caption: 'BEE ON ESCAPADE',
+            src: 'nat/beeonescapade.jpg'
         }, {
-            caption: 'CAVITY',
-            src: 'ent/cavity.jpg'
+            caption: 'GEORGE BURNS',
+            src: 'nat/georgeburns.jpg'
         }, {
-            caption: 'DE LA SOUL - RHYMEFEST',
-            src: 'ent/delasoul_rhymefest.jpg'
+            caption: 'ORCHID',
+            src: 'nat/orchid1.jpg'
         }, {
-            caption: 'FIREEATER',
-            src: 'ent/fireeater.jpg'
+            caption: 'PEACOCK ON THE BLOCK',
+            src: 'nat/pecockontheblock.jpg'
         }, {
-            caption: 'GEORGE CLINTON',
-            src: 'ent/georgeclinton.jpg'
+            caption: 'PERFECT MOMENT (1991)',
+            src: 'nat/perfectmoment1991.jpg'
         }, {
-            caption: 'G. PUCIATO - DILLINGER ESCAPE PLAN',
-            src: 'ent/GPuciato_dillingerescapeplan.jpg'
+            caption: 'PHYLLIS DILLER (2007)',
+            src: 'nat/phyllisdiller2007.jpg'
         }, {
-            caption: 'JERU THE DAMAJA',
-            src: 'ent/jeruthedamaja.jpg'
+            caption: 'SNITCHES GET STITCHES',
+            src: 'nat/snitchesgetstitches.jpg'
         }, {
-            caption: 'MACK 10 - KRUSH GROOVE',
-            src: 'ent/mack10_krushgroove.jpg'
+            caption: 'STRIPES',
+            src: 'nat/stripes.jpg'
         }, {
-            caption: 'MICHAEL "CLIP" PAYNE',
-            src: 'ent/michaelclippayne.jpg'
+            caption: 'THE HEART',
+            src: 'nat/theheart.jpg'
         }, {
-            caption: 'PAUL "FREEZ LUV" FARMER',
-            src: 'ent/paulfreezluvfarmer.jpg'
+            caption: 'THE NUN (1987)',
+            src: 'nat/thenun1987.jpg'
         }, {
-            caption: 'PROBLEMS - KRUSH GROOVE',
-            src: 'ent/problems_krushgroove.jpg'
+            caption: 'THE WALK',
+            src: 'nat/thewalk.jpg'
         }, {
-            caption: 'SHANA HALIGAN',
-            src: 'ent/shanahaligan.jpg'
-        }, {
-            caption: 'SNOOP DOGG - KRUSH GROOVE',
-            src: 'ent/snoopdogg_krushgroove.jpg'
-        }, {
-            caption: 'THE RAP PACK',
-            src: 'ent/therappack.jpg'
-        }, {
-            caption: 'TOMASINA ABATE - WHISKEY',
-            src: 'ent/TomasinaAbate_whiskey.jpg'
-        }, {
-            caption: 'THIS IS WHAT IT\'S SUPPOSE TO LOOK LIKE',
-            src: 'perceepntp_2att.jpg'
-        }, {
-            caption: 'WOODEN NICKEL',
-            src: 'ntruickphoto_artrap-5.jpg'
-        }, {
-            caption: 'THE GAME',
-            src: 'ntruickphoto_artrap-6.jpg'
-        }]
+            caption: 'DAY & NIGHT',
+            src: '2015ntpxmasprint_selects-3.jpg'
+        }, ]
 
         function refresh() {
             $('#photo').attr('src', 'img/' + photos[current].src)
@@ -111,7 +93,7 @@
             e.preventDefault()
             current--
             if (current < 0) {
-                current = 19
+                current = 13
             }
             refresh()
         })
@@ -119,7 +101,7 @@
         $('#next').on('click' ,function(e) {
             e.preventDefault()
             current++
-            if (current > 19) {
+            if (current > 13) {
                 current = 0
             }
             refresh()
